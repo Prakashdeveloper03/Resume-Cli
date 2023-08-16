@@ -1,0 +1,34 @@
+{
+  "Projects": [
+    {
+      "Title": "Pricefy",
+      "Description": [
+        "Pricefy app is used to predict the price of the car based on car's present price, years, kilometers driven, no of owners, fuel type, seller type and transmission mode.",
+        "Employed the Frequency Encoding technique to effectively encode categorical features, enhancing the model's ability to handle diverse input data.",
+        "Trained a Random Forest model achieved an impressive Explained Variance Score of 98.59% and R2 square score of validating the model's high level of predictive power."
+      ],
+      "Source Code": "https://github.com/Prakashdeveloper03/Pricefy",
+      "Application Link": "https://pricefy.onrender.com/"
+    },
+    {
+      "Title": "Diabetes Predictor",
+      "Description": [
+        "Diabetes predictor is used to predict whether a person has diabetes or not based on no of pregnancies, glucose, blood pressure, skin thickness, insulin, body mass index, diabetes pedigree function and age.",
+        "Addressed the challenge of an imbalanced dataset by implementing the SMOTETomek resampling technique ensuring balanced representation of both classes.",
+        "Trained a Random Forest model achieved an impressive Accuracy of 97.15% and F1 Score of 97.23%, validating the model's high level of predictive power."
+      ],
+      "Source Code": "https://github.com/Prakashdeveloper03/Diabetes-Predictor",
+      "Application Link": "https://diabetesclassify.onrender.com/"
+    },
+    {
+      "Title": "QR Code Generator",
+      "Description": [
+        "QR code generator web application using Blazor, providing users with the capability to generate QR codes from text or URLs.",
+        "Designed a modern and responsive user interface using Blazor's components and styles.",
+        "Deployed the application through Azure Cloud Web Service, harnessing the power of Microsoft's cloud infrastructure to ensure optimal performance."
+      ],
+      "Source Code": "https://github.com/Prakashdeveloper03/BlazorQR",
+      "Application Link": "https://qrcodeblazor.azurewebsites.net/"
+    }
+  ]
+}

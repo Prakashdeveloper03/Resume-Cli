@@ -1,0 +1,19 @@
+{
+  "Education": [
+    {
+      "Degree": "Master of Computer Applications",
+      "Institution": "College of Engineering, Guindy",
+      "Duration": "10/2022 - Present"
+    },
+    {
+      "Degree": "Bachelor of Computer Applications",
+      "Institution": "Apollo Arts & Science College",
+      "Duration": "06/2019 - 06/2022"
+    },
+    {
+      "Degree": "Higher Secondary",
+      "Institution": "Seventh Day Adventist Hr Sec School",
+      "Duration": "06/2017 - 04/2019"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "Frontend": "HTML, CSS, Bootstrap, TailwindCSS, Vue, Blazor, Markdown",
+  "Backend": "ASP.NET, Laravel, Django, Flask, FastAPI, Express, Nuxt, Node.js",
+  "Databases": "PostgreSQL, MongoDB, Redis, SQLite, Firebase",
+  "Cloud": "Render, Vercel, Google Cloud",
+  "Languages": "C, C++, C#, Go, Javascript, PHP, Python, Typescript",
+  "AI/ML": "Numpy, Pandas, Plotly, ScikitLearn, Keras, Tensorflow",
+  "Workspace": "Windows 11, Ubuntu, Fedora"
+}

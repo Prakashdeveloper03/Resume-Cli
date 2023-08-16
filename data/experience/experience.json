@@ -1,0 +1,29 @@
+{
+  "Experiences": [
+    {
+      "Position": "Data Science Tutor (Online)",
+      "Company": "Careergrowth360",
+      "Location": "Remote",
+      "Duration": "09/2022 - 01/2023",
+      "Description": [
+        "Provided personalized tutoring to students from diverse academic backgrounds and multiple colleges in Tamil, enhancing their understanding of data science and machine learning concepts.",
+        "Designed comprehensive learning materials tailored to the individual needs of students, ensuring effective comprehension of complex topics.",
+        "Organized interactive group discussions and collaborative problem-solving sessions among students, creating a dynamic learning environment.",
+        "Stayed updated with the latest trends in data science and machine learning to provide cutting-edge insights and guidance to students."
+      ]
+    },
+    {
+      "Position": "Data Science Trainee",
+      "Company": "Goeduhub Technologies",
+      "Location": "Remote",
+      "Duration": "05/2021 - 08/2021",
+      "Description": [
+        "Collecting, Cleaning and Analyzing data using python’s packages such as numpy, pandas, matplotlib, seaborn, plotly and holoviews.",
+        "Resampling imbalanced datasets with various over and under sampling methods using python's imbalanced-learn package.",
+        "Implementing various regression, classification and clustering algorithms on different datasets using python's scikit-learn package.",
+        "Building content based recommender system using cosine-similarity method using scikit-learn package.",
+        "Deploying trained machine learning models using flask web framework and render cloud platform."
+      ]
+    }
+  ]
+}
