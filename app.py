@@ -4,34 +4,58 @@ from rich import print
 from rich.prompt import Prompt
 from rich.console import Console
 
+# Create a console instance for rich text output
 console = Console()
 
 
 def show_about(json_data: str):
+    """
+    Display the 'About' section from the JSON data.
+
+    Args:
+        json_data (str): JSON data as a string.
+    """
     data = json.loads(json_data)
-    console.print(data["About"])
+    console.print("\n[bold]About[/]:")
+    console.print(f"[bright_green]{data['About']}[/]")
 
 
 def show_contact(json_data: str):
+    """
+    Display contact information from the JSON data.
+
+    Args:
+        json_data (str): JSON data as a string.
+    """
     data = json.loads(json_data)
-    console.print("\nYou can contact me at:")
-    console.print(f"[yellow bold]Email[/]: [bold bright_green]{data['Email']}[/]")
-    console.print(f"[yellow bold]Mobile[/]: [bold bright_green]{data['Mobile']}[/]")
-    console.print(f"[yellow bold]LinkedIn[/]: [bold bright_green]{data['LinkedIn']}[/]")
+    console.print("\n[bold]Contact me:[/]")
+    console.print(f"• [yellow bold]Email[/]: [bold bright_green]{data['Email']}[/]")
+    console.print(f"• [yellow bold]Mobile[/]: [bold bright_green]{data['Mobile']}[/]")
     console.print(
-        f"[yellow bold]Hackerrank[/]: [bold bright_green]{data['Hackerrank']}[/]"
+        f"• [yellow bold]LinkedIn[/]: [bold bright_magenta]{data['LinkedIn']}[/]"
     )
-    console.print(f"[yellow bold]Leetcode[/]: [bold bright_green]{data['Leetcode']}[/]")
     console.print(
-        f"[yellow bold]GeeksforGeeks[/]: [bold bright_green]{data['GeeksforGeeks']}[/]"
+        f"• [yellow bold]Hackerrank[/]: [bold bright_magenta]{data['Hackerrank']}[/]"
     )
-    console.print(f"[yellow bold]Github[/]: [bold bright_green]{data['Github']}[/]")
     console.print(
-        f"[yellow bold]Portfolio Website[/]: [bold bright_green]{data['Portfolio Website']}[/]"
+        f"• [yellow bold]Leetcode[/]: [bold bright_magenta]{data['Leetcode']}[/]"
+    )
+    console.print(
+        f"• [yellow bold]GeeksforGeeks[/]: [bold bright_magenta]{data['GeeksforGeeks']}[/]"
+    )
+    console.print(f"• [yellow bold]Github[/]: [bold bright_magenta]{data['Github']}[/]")
+    console.print(
+        f"• [yellow bold]Portfolio Website[/]: [bold bright_magenta]{data['Portfolio Website']}[/]"
     )
 
 
 def show_experience(json_data: str):
+    """
+    Display work experience details from the JSON data.
+
+    Args:
+        json_data (str): JSON data as a string.
+    """
     data = json.loads(json_data)
     experiences = data["Experiences"]
     for i, exp in enumerate(experiences, start=1):
@@ -39,13 +63,19 @@ def show_experience(json_data: str):
         console.print(f"[yellow bold]Position[/]: [bright_green]{exp['Position']}[/]")
         console.print(f"[yellow bold]Company[/]: [bright_green]{exp['Company']}[/]")
         console.print(f"[yellow bold]Location[/]: [bright_green]{exp['Location']}[/]")
-        console.print(f"[yellow bold]Duration[/]: [bright_green]{exp['Duration']}[/]")
+        console.print(f"[yellow bold]Duration[/]: [bright_magenta]{exp['Duration']}[/]")
         console.print("[yellow bold]Description[/]:")
         for j, desc in enumerate(exp["Description"], start=1):
             console.print(f"• [bright_green]{desc}[/]")
 
 
 def show_education(json_data: str):
+    """
+    Display education details from the JSON data.
+
+    Args:
+        json_data (str): JSON data as a string.
+    """
     data = json.loads(json_data)
     education = data["Education"]
     console.print("\n[bold]Education[/]:")
@@ -58,21 +88,35 @@ def show_education(json_data: str):
 
 
 def show_skills(json_data: str):
+    """
+    Display skills details from the JSON data.
+
+    Args:
+        json_data (str): JSON data as a string.
+    """
     data = json.loads(json_data)
-    console.print(f"\n[yellow bold]Languages[/]: [bright_green]{data['Languages']}[/]")
-    console.print(f"[yellow bold]Frontend[/]: [bright_green]{data['Frontend']}[/]")
-    console.print(f"[yellow bold]Backend[/]: [bright_green]{data['Backend']}[/]")
-    console.print(f"[yellow bold]Databases[/]: [bright_green]{data['Databases']}[/]")
-    console.print(f"[yellow bold]Cloud[/]: [bright_green]{data['Cloud']}[/]")
-    console.print(f"[yellow bold]AI/ML[/]: [bright_green]{data['AI/ML']}[/]")
-    console.print(f"[yellow bold]Workspace[/]: [bright_green]{data['Workspace']}[/]")
+    console.print("\n[bold]Skills[/]:")
+    console.print(f"• [yellow bold]Languages[/]: [bright_green]{data['Languages']}[/]")
+    console.print(f"• [yellow bold]Frontend[/]: [bright_green]{data['Frontend']}[/]")
+    console.print(f"• [yellow bold]Backend[/]: [bright_green]{data['Backend']}[/]")
+    console.print(f"• [yellow bold]Databases[/]: [bright_green]{data['Databases']}[/]")
+    console.print(f"• [yellow bold]Cloud[/]: [bright_green]{data['Cloud']}[/]")
+    console.print(f"• [yellow bold]AI/ML[/]: [bright_green]{data['AI/ML']}[/]")
+    console.print(f"• [yellow bold]Workspace[/]: [bright_green]{data['Workspace']}[/]")
 
 
 def show_projects(json_data: str):
+    """
+    Display project details from the JSON data.
+
+    Args:
+        json_data (str): JSON data as a string.
+    """
     data = json.loads(json_data)
     projects = data["Projects"]
     for i, project in enumerate(projects, start=1):
-        console.print(f"\n[bold bright_yellow]{project['Title']}[/]")
+        console.print(f"\n[bold]Project[/] #[bold bright_yellow]{i}[/]")
+        console.print(f"[bold bright_yellow]{project['Title']}[/]")
         console.print("[yellow bold]Description[/]:")
         for j, desc in enumerate(project["Description"], start=1):
             console.print(f"• [bright_green]{desc}[/]")
@@ -85,16 +129,24 @@ def show_projects(json_data: str):
 
 
 def show_certificates(json_data: str):
+    """
+    Display certificate details from the JSON data.
+
+    Args:
+        json_data (str): JSON data as a string.
+    """
     data = json.loads(json_data)
     certificates = data["Certificates"]
     console.print("\n[bold]Certificates[/]:")
     for i, certificate in enumerate(certificates, start=1):
-        console.print(f"• [bright_green]{certificate}[/]")
+        console.print(
+            f"• [bright_green]{certificate.split('-')[0]}[/]-[bold bright_magenta]{certificate.split('-')[1]}[/]"
+        )
 
 
 def main():
     console.print(
-        "\n\nHey there! I'm [bold bright_yellow]Siva Prakash[/], I'm a [bold bright_green]machine learning enthusiast[/] from India and currently learning new technologies."
+        "\nHey there! I'm [bold bright_yellow]Siva Prakash[/], I'm a [bold bright_green]machine learning enthusiast[/] from India and now currently working with some self paced mini-projects in the field of data analytics, software engineering and machine learning."
     )
 
     options = [
@@ -177,7 +229,7 @@ def main():
                 console.print("Couldn't find or load that file.")
 
         elif choice == options[7]:
-            console.print("[bold bright_yellow] Bye! Have a great day![/]")
+            console.print("[bold bright_yellow] Bye! Have a great day!\n[/]")
             break
 
 
