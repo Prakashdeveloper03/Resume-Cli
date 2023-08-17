@@ -228,7 +228,7 @@ def main():
             except FileNotFoundError:
                 console.print("Couldn't find or load that file.")
 
-        elif choice == options[7]:
+        else:
             console.print("[bold bright_yellow] Bye! Have a great day!\n[/]")
             break
 
